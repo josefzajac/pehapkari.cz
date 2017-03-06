@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="description" content="Oficiální stránky PHP komunity">
+        <meta name="keywords" content="PHP, komunita, programování">
+        <meta name="author" content="http://pehapkari.cz">
+        <meta name="robots" content="index, follow">
+
+        <meta property="og:image" content="/images/php-square.png">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <link rel="alternate" type="application/rss+xml" title="Péhápkaři.cz Blog RSS" href="/rss.xml">
+
+        <link href="/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <link href="/assets/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+        <link href="/assets/css/style.css" rel="stylesheet" type="text/css">
+
+        <link href="/favicon.ico" rel="shortcut icon">
+
+        <title>Píšeme o PHP</title>
+    </head>
+
+    <body>
+<header>
+    <div class="container">
+        <div class="hidden-xs">
+            <a href="/"><img src="/assets/images/logo-header.svg?ver" alt="" height="50"></a>
+
+            <nav class="top-navigation">
+                <a href="/blog/" class="active">
+                    <em class="fa fa-newspaper-o fa-fw"></em>
+                    Blog
+                </a>
+                <a href="/mentori/">
+                    <em class="fa fa-handshake-o fa-fw"></em>
+                    Mentoři
+                </a>
+                <a href="/slovnicek/">
+                    <em class="fa fa-language fa-fw"></em>
+                    Slovníček
+                </a>
+                <a href="/knihovnicka/">
+                    <em class="fa fa-book fa-fw"></em>
+                    Knížky
+                </a>
+
+                    
+
+                    <a href="https://github.com/pehapkari/pehapkari.cz/edit/master/source/blog.latte" class="hidden-sm">
+                        <em class="fa fa-fw fa-pencil"></em>
+                        Uprav
+                    </a>
+            </nav>
+        </div>
+
+        <div id="mobile-menu" class="row text-center hidden-md hidden-sm hidden-lg">
+            <a href="/" class="col-xs-3">
+                <em class="fa fa-home"></em>
+                <br>
+                Home
+            </a>
+            <a href="/blog/" class="col-xs-3 active">
+                <em class="fa fa-book fa-fw"></em>
+                <br>
+                Blog
+            </a>
+            <a href="/mentori/" class="col-xs-3">
+                <em class="fa fa-handshake-o fa-fw"></em>
+                <br>
+                Mentoři
+            </a>
+            <a href="/knihovnicka/" class="col-xs-3">
+                <em class="fa fa-language fa-fw"></em>
+                <br>
+                Knížky
+            </a>
+        </div>
+    </div>
+</header>
+
+                <div class="container" id="blog">
+        <h2 class="text-center">
+            <em class="fa fa-newspaper-o fa-fw"></em>
+            Komunitní PHP blog
+        </h2>
+
+        <p class="text-center">Chceš taky přidat článek? <a href="/blog/2016/12/01/chces-psat-o-php-posli-pr/">Tady si přečti jak</a></p>
+
+        <hr>
+
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2017/03/02/drop-robot-loader-and-let-composer-deal-with-autoloading/">Drop RobotLoader and let Composer Deal with Autoloading</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        4 min
+
+        |
+
+        by
+        <strong>Tomáš Votruba</strong>
+
+        &ndash;
+
+        <time datetime="2017-03-Thu">
+            2. 3. 2017
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2017/03/02/drop-robot-loader-and-let-composer-deal-with-autoloading/#disqus_thread">X</a>
+        comments
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">Using 2 tools for one thing, in this case 2 packages to autoload classes, are sign of an architecture smell. Many applications I see contain RobotLoader for historical reasons. I will borrow this from psychology: pathological behavioral patterns tear us down in the present, but were useful in past.
+<br><br>
+The best way to deal with them is acknowledge their purpose and then, let them go and enjoy the gift of present.</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2017/02/27/kostra-testovane-aplikace/">Kostra testované aplikace</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        3 min
+
+        |
+
+        napsal
+        <strong>Jaroslav Hranička</strong>
+
+        &ndash;
+
+        <time datetime="2017-02-Mon">
+            27. 2. 2017
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2017/02/27/kostra-testovane-aplikace/#disqus_thread">X</a>
+        komentářů
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">Stále tápete, jak vytvořit základní kostru aplikace, kde je Composer vč. autoloaderu a máte i testy? Podíváme se na to, že to je velmi jednoduché.</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2017/02/24/symfony-validator-dynamic-constraints/">How to use Dynamic Constraints with Symfony/Validator</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+        
+        <p class="success">
+            <strong><em class="fa fa-fw fa-check-square-o"></em>
+                <a href="https://github.com/pehapkari/pehapkari.cz/tree/master/tests/Posts/Year2017/SymfonyValidatorDynamicConstraints">
+                    Covered by test
+                </a>
+            </strong>
+        </p>
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        3 min
+
+        |
+
+        by
+        <strong>Jáchym Toušek</strong>
+
+        &ndash;
+
+        <time datetime="2017-02-Fri">
+            24. 2. 2017
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2017/02/24/symfony-validator-dynamic-constraints/#disqus_thread">X</a>
+        comments
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">Some edge-cases with Symfony Validator might force you to create a constraint dynamically during the validation. This article will show you how to do it and how to solve error mapping for such constraints.</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2017/02/18/symfony-validator-conditional-constraints/">How to use Conditional Constraints with Symfony/Validator</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+        
+        <p class="success">
+            <strong><em class="fa fa-fw fa-check-square-o"></em>
+                <a href="https://github.com/pehapkari/pehapkari.cz/tree/master/tests/Posts/Year2017/SymfonyValidatorConditionalConstraints">
+                    Covered by test
+                </a>
+            </strong>
+        </p>
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        4 min
+
+        |
+
+        by
+        <strong>Jáchym Toušek</strong>
+
+        &ndash;
+
+        <time datetime="2017-02-Sat">
+            18. 2. 2017
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2017/02/18/symfony-validator-conditional-constraints/#disqus_thread">X</a>
+        comments
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">In some more complicated cases you need to do some validations only if some condition is met. This article covers the tricks you should use including a new feature in Symfony 3.2.</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2017/02/11/symfony-validator-comparison-constraints/">How to use Comparison Constraints with Symfony/Validator</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+        
+        <p class="success">
+            <strong><em class="fa fa-fw fa-check-square-o"></em>
+                <a href="https://github.com/pehapkari/pehapkari.cz/tree/master/tests/Posts/Year2017/SymfonyValidatorComparisonConstraints">
+                    Covered by test
+                </a>
+            </strong>
+        </p>
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        2 min
+
+        |
+
+        by
+        <strong>Jáchym Toušek</strong>
+
+        &ndash;
+
+        <time datetime="2017-02-Sat">
+            11. 2. 2017
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2017/02/11/symfony-validator-comparison-constraints/#disqus_thread">X</a>
+        comments
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">With Symfony/Validator there is no obvious way to implement validations like comparing a value to another property on the same object. There are several articles about this topic already but literally all of them are completely outdated. In this article I'll cover the correct way to solve this.</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2017/02/09/jak-na-testovani-pomoci-codeception/">Jak na akceptační testovaní pomocí Codeception</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        4 min
+
+        |
+
+        napsal
+        <strong>Matěj Račinský</strong>
+
+        &ndash;
+
+        <time datetime="2017-02-Thu">
+            9. 2. 2017
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2017/02/09/jak-na-testovani-pomoci-codeception/#disqus_thread">X</a>
+        komentářů
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">Jak automaticky testovat celé stránky a simulovat chování uživatele na webu pomocí Codeception</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2017/02/06/how-to-rehash-legacy-passwords-in-symfony/">How to rehash legacy passwords in Symfony</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        6 min
+
+        |
+
+        by
+        <strong>Ivan Kvasnica</strong>
+
+        &ndash;
+
+        <time datetime="2017-02-Mon">
+            6. 2. 2017
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2017/02/06/how-to-rehash-legacy-passwords-in-symfony/#disqus_thread">X</a>
+        comments
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">You need to import users from an old project, but but don't want to bother them with resetting their passwords just because you want to use bcrypt. Fortunately, there is a solution.</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2017/01/30/konfiguracni-objekty-v-nette/">Konfigurační objekty v Nette</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+        
+        <p class="success">
+            <strong><em class="fa fa-fw fa-check-square-o"></em>
+                <a href="https://github.com/pehapkari/pehapkari.cz/tree/master/tests/Posts/Year2017/NetteConfigObjects">
+                    Pokrytý testem
+                </a>
+            </strong>
+        </p>
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        4 min
+
+        |
+
+        napsal
+        <strong>Tomáš Jacík</strong>
+
+        &ndash;
+
+        <time datetime="2017-01-Mon">
+            30. 1. 2017
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2017/01/30/konfiguracni-objekty-v-nette/#disqus_thread">X</a>
+        komentářů
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">Jak se poprat s předáním konfigurace službě z config.neon? A jak k tomu využít Nette DI?</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2017/01/26/jak-zaregistrovat-nette-komponentu-jako-posluchace-udalosti/">Jak zaregistrovat Nette komponentu jako posluchače událostí</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+        
+        <p class="success">
+            <strong><em class="fa fa-fw fa-check-square-o"></em>
+                <a href="https://github.com/pehapkari/pehapkari.cz/tree/master/tests/Posts/Year2017/ListeningNetteComponents">
+                    Pokrytý testem
+                </a>
+            </strong>
+        </p>
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        9 min
+
+        |
+
+        napsal
+        <strong>Tomáš Pilař</strong>
+
+        &ndash;
+
+        <time datetime="2017-01-Thu">
+            26. 1. 2017
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2017/01/26/jak-zaregistrovat-nette-komponentu-jako-posluchace-udalosti/#disqus_thread">X</a>
+        komentářů
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">Dnes si povíme o tom, jak přimět Nette <strong>komponenty poslouchat na události</strong>, které nám vyvolává aplikace a umožnit jim se podle toho zachovat.</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2017/01/23/inteligentni-debug-mode-v-nette/">Inteligentní debug mode v Nette</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        2 min
+
+        |
+
+        napsal
+        <strong>Tomáš Jacík</strong>
+
+        &ndash;
+
+        <time datetime="2017-01-Mon">
+            23. 1. 2017
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2017/01/23/inteligentni-debug-mode-v-nette/#disqus_thread">X</a>
+        komentářů
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">Jak se poprat se zapínáním debug módu při vývoji a jeho vypnutím na produkci? A co debug mód v konzoli? Pojďme se podívat, jak to řešit lépe.</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2017/01/20/jak-snadno-a-rychle-upravovat-soubory-ve-vendoru/">Jak snadno a rychle upravovat soubory ve vendoru?</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        5 min
+
+        |
+
+        napsal
+        <strong>Tomáš Pilař</strong>
+
+        &ndash;
+
+        <time datetime="2017-01-Fri">
+            20. 1. 2017
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2017/01/20/jak-snadno-a-rychle-upravovat-soubory-ve-vendoru/#disqus_thread">X</a>
+        komentářů
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">Už ses někdy dostal do situace, kdy jsi potřeboval opravit chybu nějaké závislosti ve složce vendor? Jak takovou úpravu sdílet v týmu s ostatními programátory a jak ji udržet v souboru i po spuštění composeru? V tomto článku se dovíš, jak snadno a elegantně se tento problém dá vyřešit během 1 minuty.</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2017/01/15/jak-funguje-dependency-injection-v-symfony-a-v-nette/">Jak funguje Dependency Injection v Symfony a v Nette</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        4 min
+
+        |
+
+        napsal
+        <strong>Petr Olišar</strong>
+
+        &ndash;
+
+        <time datetime="2017-01-Sun">
+            15. 1. 2017
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2017/01/15/jak-funguje-dependency-injection-v-symfony-a-v-nette/#disqus_thread">X</a>
+        komentářů
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">V tomto článku si ukážeme základy Dependency Injection &ndash; jaký je rozdíl mezi Nette presenterem a Symfony controllerem. A jak přenést trochu chování Nette do Symfony.</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2017/01/12/why-articles-with-code-examples-should-be-CI-tested/">Why articles with code examples should be CI tested</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        4 min
+
+        |
+
+        by
+        <strong>Tomáš Votruba</strong>
+
+        &ndash;
+
+        <time datetime="2017-01-Thu">
+            12. 1. 2017
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2017/01/12/why-articles-with-code-examples-should-be-CI-tested/#disqus_thread">X</a>
+        comments
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">I know many great articles that go right to the point. I use their code examples and they work. But when I recommend these articles to people I mentor, I realize the articles are already 2 years old and their code samples probably do not work any more. From hero to zero. Today I will show you how to keep them alive lot longer with a minimal effort.</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2017/01/10/5-temat-po-kterych-php-programatori-touzi/">5 témat, po kterých PHP programátoři touží</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        3 min
+
+        |
+
+        napsal
+        <strong>Tomáš Votruba</strong>
+
+        &ndash;
+
+        <time datetime="2017-01-Tue">
+            10. 1. 2017
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2017/01/10/5-temat-po-kterych-php-programatori-touzi/#disqus_thread">X</a>
+        komentářů
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">Zajímá české a slovenské programátory spíš intro do Gitu nebo Symfony pro pokročilé? Chtějí spíš týdenní výuku nebo víkendovou? Celý den nebo jen pár hodin? Na tyto a další otázky jsme měli jen subjektivní odpovědi. Chěli jsme vědět &ndash; <strong>a tak vznikl dotazník o vzdělávání na míru - na něj nám odpovědlo 76 z vás a dnes se podělíme o jeho výsledky</strong>.</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2017/01/05/symfony-console-from-scratch/">Symfony Console from the Scratch</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+        
+        <p class="success">
+            <strong><em class="fa fa-fw fa-check-square-o"></em>
+                <a href="https://github.com/pehapkari/pehapkari.cz/tree/master/tests/Posts/Year2017/SymfonyConsole">
+                    Covered by test
+                </a>
+            </strong>
+        </p>
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        2 min
+
+        |
+
+        by
+        <strong>Tomáš Votruba</strong>
+
+        &ndash;
+
+        <time datetime="2017-01-Thu">
+            5. 1. 2017
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2017/01/05/symfony-console-from-scratch/#disqus_thread">X</a>
+        comments
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">Symfony Console is the one package you will probably use to build a PHP CLI app. It's of one the easiest Symfony components. Why? You <strong>only create Application class, add your Command class and you are ready to go</strong>.</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2016/12/30/testovani-php-kodu/">Testování PHP kódu</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        7 min
+
+        |
+
+        napsal
+        <strong>Petr Hejna</strong>
+
+        &ndash;
+
+        <time datetime="2016-12-Fri">
+            30. 12. 2016
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2016/12/30/testovani-php-kodu/#disqus_thread">X</a>
+        komentářů
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">Testování aplikací není vždy tak snadné, jak se na papíře jeví. Svojí zkušeností jsem dospěl k&nbsp;několika zásadám a&nbsp;postupům, které se mi osvědčily a&nbsp;které se tu pokusím sepsat a&nbsp;částečně i&nbsp;zdůvodnit. Pomáhají mi k&nbsp;psaní čítelnějších a&nbsp;udržovatelnějších testů. Za hlavní přínos pak považuji snadnou rozšiřitelnost testů, jejíž potřeba přichází s&nbsp;rozšiřováním fukcionality projektu.</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2016/12/22/adminer-pre-redis-memcache-rabbit/">Adminer pre Redis, Memcache, RabbitMQ</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        2 min
+
+        |
+
+        napsal
+        <strong>Michal Lulčo</strong>
+
+        &ndash;
+
+        <time datetime="2016-12-Thu">
+            22. 12. 2016
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2016/12/22/adminer-pre-redis-memcache-rabbit/#disqus_thread">X</a>
+        komentářů
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">Pred nejakým časom som potreboval vyhľadávať a zoraďovať dáta v Redise. Takže som si k tomu napísal jednoduchý PHP skript. A keď už som ho mal napísaný, chcel som pomôcť aj dalším ľuďom, ktorí by riešili podobný problém ako ja.</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2016/12/09/jaky-byl-symfonycon-berlin-2016/">Jaký byl SymfonyCon Berlín 2016</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        2 min
+
+        |
+
+        napsal
+        <strong>Pavel Rozehnal</strong>
+
+        &ndash;
+
+        <time datetime="2016-12-Fri">
+            9. 12. 2016
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2016/12/09/jaky-byl-symfonycon-berlin-2016/#disqus_thread">X</a>
+        komentářů
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">Největší událost v Symfony světě je za námi. Představeny byly služby <strong>SensioCloud</strong>, nový balíčkovací systém <strong>Symfony Flex</strong> a mnoho dalšího.</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2016/12/05/symfony-event-dispatcher/">Event Dispatcher from the Scratch</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+        
+        <p class="success">
+            <strong><em class="fa fa-fw fa-check-square-o"></em>
+                <a href="https://github.com/pehapkari/pehapkari.cz/tree/master/tests/Posts/Year2016/EventDispatcher">
+                    Covered by test
+                </a>
+            </strong>
+        </p>
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        3 min
+
+        |
+
+        by
+        <strong>Tomáš Votruba</strong>
+
+        &ndash;
+
+        <time datetime="2016-12-Mon">
+            5. 12. 2016
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2016/12/05/symfony-event-dispatcher/#disqus_thread">X</a>
+        comments
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">Today we will look at first Symfony component - Event Dispatcher. Why should you start with it? It gives you flexibility, it is easy to understand and it helps you to write decoupled code.</p>
+            </div>
+            <hr>
+
+            <div class="article">
+                <h3>
+                    <a href="/blog/2016/12/01/chces-psat-o-php-posli-pr/">Chceš psát o PHP? Pošli Pull Request!</a>
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+<div class="metadataLine">
+
+    <p>
+        <em class="fa fa-clock-o fa-fw"></em>
+        2 min
+
+        |
+
+        napsal
+        <strong>Tomáš Votruba</strong>
+
+        &ndash;
+
+        <time datetime="2016-12-Thu">
+            1. 12. 2016
+        </time>
+
+        |
+
+        <em class="fa fa-fw fa-comments"></em>
+        <a href="https://pehapkari.cz/blog/2016/12/01/chces-psat-o-php-posli-pr/#disqus_thread">X</a>
+        komentářů
+    </p>
+</div>
+                    </div>
+                </div>
+
+                <p class="perex">Pokud ti v psaní brání to, <strong>že nemáš funkční blog, krásný design, velké sociální kruhy pro šíření článků nebo copy-cítění</strong>, máme pro tebe řešení - komunitní blog o PHP. <strong>Nudnou rutinu nech na nás a v klidu se věnuj psaní</strong>.</p>
+            </div>
+            
+    </div>
+
+    <script id="dsq-count-scr" src="https://pehapkari.disqus.com/count.js" async defer></script>
+
+<script>
+    ga=function(){ ga.q.push(arguments) };
+    ga.q=[];
+    ga.l=+new Date;
+    ga('create', "UA-89860072-1", 'auto');
+    ga('send','pageview');
+</script>
+<script async defer src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+    !function(f,b,e,v,n,t,s){ if(f.fbq)return;n=f.fbq=function(){ n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', "201338863559186");
+    fbq('track', 'PageView');
+</script>
+    </body>
+</html>
